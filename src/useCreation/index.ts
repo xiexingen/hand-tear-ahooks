@@ -23,7 +23,7 @@ export default function useCreation<T>(factory: () => T, deps: any[]) {
  */
 function depsAreSome(oldDeps: any[], deps: any[]): boolean {
   if (oldDeps === deps) return true;
-  // 此处有个漏洞，比如新deps在老的deps上增加了数据
+  // 此处有个漏洞，比如新deps在老的deps上增加了数据,已向官方pull request
   if (oldDeps.length !== deps.length) return false;
   for (let i = 0; i < oldDeps.length; i++) {
     if (oldDeps[i] !== deps[i]) return false;
