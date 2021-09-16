@@ -1,7 +1,7 @@
 ---
 hero:
   title: hand-tear-ahooks
-  desc: hand-tear-ahooks site example
+  desc: 手撕ahooks
   actions:
     - text: Getting Started
       link: /components
