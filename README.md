@@ -1,5 +1,7 @@
 # hand-tear-ahooks
 
+学习研究[ahooks](https://ahooks.js.org/zh-CN/hooks/async)，最终实现一个 ahooks 的功能
+
 ## Getting Started
 
 Install dependencies,
