@@ -24,6 +24,19 @@ export default function () {
     setCount((val) => val + 1);
     message.success('Submit finished');
   });
+
+  /**
+   * 题外话
+   * 如果此处这么调用，['a','b','c'].forEach(item=>submit().then(function2)) 这样执行的步骤是什么？
+   * 分析：
+   *  1.数组遍历 第一次执行'a'进入submit方法，内部标记状态为执行中，等待mockApiRequest执行完成
+   *  2.执行'b'进入submit方法，发现状态为执行中，直接return(也就相当于Promise.resolve(undefined))然后执行then里面的function2
+   *  3.执行'c'进入submit方法，发现状态为执行中，直接return(也就相当于Promise.resolve(undefined))然后执行then里面的function2
+   *  4.mockApiRequest执行完成 继续后面的逻辑，然后执行then里面的function2
+   * 所以then里面的执行顺序应该是:b、c、a
+   * useLockFn虽然返回的是个Promise，但是不建议吧其他逻辑放到then里面，业务逻辑建议全在useLockFn里面实现
+   */
+
   return (
     <>
       <p>Submit count:{count}</p>

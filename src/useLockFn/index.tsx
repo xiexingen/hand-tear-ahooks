@@ -8,6 +8,7 @@ export default function <P extends any[], V extends any = any>(
   // 返回一个useCallback包裹的函数，当fn变化的时候返回新的函数
   return useCallback(
     async (...args: P) => {
+      // 此处直接return 相当于返回了 Promise.resolve(undefined)，如果后面有.then 会继续执行后面的.then方法
       if (lockRef.current) return;
       lockRef.current = true;
       try {
