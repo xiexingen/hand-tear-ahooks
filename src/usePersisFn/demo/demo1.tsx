@@ -9,7 +9,7 @@ import usePersisFn from '..';
 
 export default function () {
   const [count, setCount] = useState(1);
-  // 定义一个引用地址永远不会变的函数(不会随着count的改版而改版)
+  // 定义一个引用地址永远不会变的函数(不会随着count的改版而改变地址，但是方法内部访问到的是最新的count)
   const showCountPersistFn = usePersisFn(() => {
     message.info(`Current count is ${count}`);
   });
