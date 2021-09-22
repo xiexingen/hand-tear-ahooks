@@ -1,6 +1,6 @@
 ---
 hero:
-  title: hand-tear-ahooks
+  title: 手撕ahooks
   desc: 手撕ahooks
   actions:
     - text: Getting Started

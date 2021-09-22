@@ -26,6 +26,10 @@ const a = useRef(new Subject()); // 每次重渲染，都会执行实例化 Subj
 const b = useCreation(() => new Subject(), []); // 通过 factory 函数，可以避免性能隐患
 ```
 
+# 实现原理
+
+通过 useRef 赋值一个空对象，当第一次初始化或者依赖项改变的时候才去执行创建对象的函数
+
 ## 代码演示
 
 ### 基础用法

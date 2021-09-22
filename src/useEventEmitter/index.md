@@ -15,7 +15,7 @@ legacy: /zh-CN/advanced/use-event-emitter
 
 在组件中调用 `useEventEmitter` 可以获得一个 `EventEmitter` 的实例：
 
-# 一点思考
+# 实现原理
 
 这种方式的事件订阅机制还是依赖了父容器需要从父容器中将事件的实例对象以属性的形式传递到子组件，适合兄弟节点直接通信的情况(当然也可以通过 Provider 往子层传递)
 

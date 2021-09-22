@@ -13,6 +13,8 @@ group:
 
 一对帮助你处理在拖拽中进行数据转移的 hooks
 
+# 实现原理
+
 useDrag 利用浏览器的特性设置 draggable 并监听 onDragStart、onDragEnd 事件，在 onDragStart 中为 dataTransfer 设置值
 useDrop 利用浏览器的特性监听 onDragOver、onDragEnter、onDragLeave、onDrop、onPaste 来处理不同的拖拽，配合 useDrag 使用获取拖拽元素的值
 
