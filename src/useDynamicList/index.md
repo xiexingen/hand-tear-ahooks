@@ -17,11 +17,11 @@ group:
 
 ### 动态列表
 
-<!-- <code src="./demo/demo1.tsx" /> -->
+<code src="./demo/demo1.tsx" />
 
 ### 连环嵌套
 
-<!-- <code src="./demo/demo2.tsx" /> -->
+<code src="./demo/demo2.tsx" />
 
 ### 动态表格(可拖拽)
 
