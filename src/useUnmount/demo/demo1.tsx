@@ -1,9 +1,6 @@
 /**
- * title: Default usage
- * desc: The function is called right before the component unmount.
- *
- * title.zh-CN: 基础用法
- * desc.zh-CN: 在组件卸载时，执行方法。
+ * title: 基础用法
+ * desc: 在组件卸载时，执行方法。
  */
 
 import { message } from 'antd';

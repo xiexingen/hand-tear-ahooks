@@ -1,9 +1,6 @@
 /**
- * title: Nesting forms
- * desc: nesting dynamic forms in a set of form groups.
- *
- * title.zh-CN: 嵌套表单
- * desc.zh-CN: 动态表单内部嵌套动态表单
+ * title: 嵌套表单
+ * desc: 动态表单内部嵌套动态表单
  */
 
 import React, { useState } from 'react';

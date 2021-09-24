@@ -1,9 +1,6 @@
 /**
- * title: Default usage
- * desc: using ref to listen to size change
- *
- * title.zh-CN: 基础用法
- * desc.zh-CN: 使用 ref 监听节点尺寸变化
+ * title: 基础用法
+ * desc: 使用 ref 监听节点尺寸变化
  */
 
 import React, { useRef } from 'react';

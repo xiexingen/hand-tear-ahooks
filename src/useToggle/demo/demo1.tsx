@@ -1,9 +1,6 @@
 /**
- * title: Default usage
- * desc: use boolean value as default，use it as same as useBoolean.
- *
- * title.zh-CN: 基础用法
- * desc.zh-CN: 默认为 boolean 切换，基础用法与 useBoolean 一致。
+ * title: 基础用法
+ * desc: 默认为 boolean 切换，基础用法与 useBoolean 一致。
  */
 
 import React from 'react';

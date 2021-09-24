@@ -1,9 +1,6 @@
 /**
- * title: Dyanmic table(draggable)
- * desc: using antd table to build dynamic table form.
- *
- * title.zh-CN: 动态表格(可拖拽)
- * desc.zh-CN: 使用 antd table 构建动态表格
+ * title: 动态表格(可拖拽)
+ * desc: 使用 antd table 构建动态表格
  */
 
 import React, { useState } from 'react';

@@ -1,7 +1,5 @@
 /**
- * title: Default usage
- *
- * title.zh-CN: 基础用法
+ * title: 基础用法
  */
 import React, { useState, useEffect } from 'react';
 import { Button } from 'antd';
