@@ -3,9 +3,11 @@ title: useUrlState
 nav:
   title: Hooks
   path: /hooks
+  order: 1
 group:
   title: State
   path: /state
+  order: 1
 ---
 
 # useUrlState

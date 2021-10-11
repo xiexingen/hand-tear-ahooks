@@ -27,7 +27,6 @@ export function createUseStorageState(nullishStorage: Storage | null) {
     key: string,
     defaultValue: T | IFuncUpdater<T>,
   ): StorageStateResultHasDefaultValue<T>;
-
   function useStorageState<T>(key: string, defaultValue?: T | IFuncUpdater<T>) {
     const storage = nullishStorage as Storage;
     const [state, setState] = useState<T | undefined>(() => getStoredValue());
