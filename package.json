@@ -30,16 +30,19 @@
   "dependencies": {
     "@ant-design/icons": "^4.6.4",
     "antd": "^4.16.13",
+    "axios": "^0.24.0",
     "dayjs": "^1.10.7",
     "intersection-observer": "^0.12.0",
     "js-cookie": "^3.0.1",
     "lodash": "^4.17.21",
+    "mockjs": "^1.1.0",
     "query-string": "^7.0.1",
     "react": "^16.12.0",
     "react-drag-listview": "^0.1.8",
     "react-router": "^5.2.1",
     "resize-observer-polyfill": "^1.5.1",
-    "screenfull": "^5.1.0"
+    "screenfull": "^5.1.0",
+    "umi-request": "^1.4.0"
   },
   "devDependencies": {
     "@types/js-cookie": "^2.2.7",
