@@ -39,10 +39,8 @@ function useControllableValue<T = any>(
   // 获取值
   const value = props[valuePropName] as T;
 
-  debugger;
   // 当前值，默认为props中的valuePropName 没有的情况取defaultValuePropName 否则取option中的defaultValue
   const [state, setState] = useState<T>(() => {
-    debugger;
     if (valuePropName in props) {
       return value;
     }
@@ -54,7 +52,6 @@ function useControllableValue<T = any>(
 
   // init的时候不用执行了
   useUpdateEffect(() => {
-    debugger;
     if (valuePropName in props) {
       setState(value);
     }
@@ -63,7 +60,6 @@ function useControllableValue<T = any>(
   // 外部调用设置值
   const handleSetState = useCallback(
     (v: T, ...args: any[]) => {
-      debugger;
       if (!(valuePropName in props)) {
         setState(v);
       }

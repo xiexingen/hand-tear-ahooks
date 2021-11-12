@@ -8,7 +8,6 @@ import { Input, Button } from 'antd';
 import useControllableValue from '..';
 
 const ControllableComponent = (props: any) => {
-  debugger;
   const [state, setState] = useControllableValue<string>(props);
 
   return (
@@ -25,7 +24,6 @@ export default () => {
   const clear = () => {
     setState('');
   };
-  debugger;
   return (
     <>
       <ControllableComponent value={state} onChange={setState} />

@@ -32,7 +32,6 @@ export default () => {
     (changes) => {
       setText(`Index of changed dependencies:${changes}`);
       return () => {
-        debugger;
         // do something
       };
     },
